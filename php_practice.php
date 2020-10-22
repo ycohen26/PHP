@@ -75,9 +75,61 @@ echo "<br />";
 $around="around";
 echo 'What goes ' . $around . ' comes '. $around .'.';
 echo "<br />";
+echo "<br />";
 
 // Variable Data Types
+$whatsit="George";
+echo "Value is ".gettype($whatsit). ".<br/>\n";
+$whatsit=8.9;
+echo "Value is ".gettype($whatsit). ".<br/>\n";
+$whatsit=True;
+echo "Value is ".gettype($whatsit). ".<br/>\n";
+$whatsit=2;
+echo "Value is ".gettype($whatsit). ".<br/>\n";
+$whatsit=NULL;
+echo "Value is ".gettype($whatsit). ".<br/>\n";
+echo "<br />";
+echo "<br />";
 
+// Control Structures Ex. #1: If-Else Statement
+if (date('F', time()) == "August") {
+  echo "It's August, so it's really hot.";
+} else {
+  echo "Not August, so at least not in the peak of the heat.";
+}
+echo "<br />";
+echo "<br />";
+
+// Simple Loops
+$i=1;
+
+while ($i <= 9) {
+  echo "abc ";
+  $i++;
+}
+echo "<br />";
+echo "<br />";
+
+$i=1;
+
+do {
+  echo "xyz ";
+  $i++;
+} while ($i<=9);
+echo "<br />";
+echo "<br />";
+
+for ($i=1; $i<=9; $i++) {
+  echo "$i ";
+}
+echo "<br />";
+echo "<br />";
+
+for ($i='A'; $i<='F'; $i++) {
+  echo "Item $i <br/>";
+}
+echo "<br />";
+echo "<br />";
 ?>
 
 </body>
